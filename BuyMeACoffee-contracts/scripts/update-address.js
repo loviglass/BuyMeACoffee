@@ -24,7 +24,7 @@ async function main() {
   // Check current withdraws address
   await getCurrentAddress();
   // Update withdraws address
-  const newAddress = "0x46aB0E888c1C4F9f3043d3e2558D9819d1f49b84"; //"0x05ffc9BE4032b9E7006DF5D15537Aca91F2Df984";
+  const newAddress = "0x46aB0E888c1C4F9f3043d3e2558D9819d1f49b84";
   await buyMeACoffee.connect(signer).updateTheWithdrawalAddress(newAddress);
   console.log("updated!");
 }
